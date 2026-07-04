@@ -1,0 +1,33 @@
+.headline h1{
+    text-align: left;
+    color:antiquewhite;
+    width:450px;
+    font-size:46px;
+    font-weight: bold;
+        }
+.headline p{
+    text-align: left;
+    line-height: 25px;
+    font-size: 20px;
+    color:#94A3B8;
+    margin-bottom: 30px;
+        }
+.headline{
+    padding:20px;
+        }
+.hero-btn{
+    padding:10px;
+    margin-left:25px;
+    text-align: center;
+    margin-right:10px;
+    margin-bottom: 20px;
+    width:550px;
+    height:50px;
+    border-radius: 10px;
+    border:none;
+    background-color:#2563EB;
+    color:#f8f8f8;
+        }
+.accent{
+    color:#06B6D4;
+    }
