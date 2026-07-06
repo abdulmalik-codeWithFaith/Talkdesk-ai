@@ -1,0 +1,21 @@
+.intro{
+    margin-top:50px;
+
+}
+.logo{
+    color:#f8f8fc;
+    font-size:26px;
+}
+.highlight{
+    color:#06B6D4;
+}
+.list{
+    color:#94A3B8;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    margin-top:20px;
+}
+.list h3{
+    color:#94A3B8;
+}
