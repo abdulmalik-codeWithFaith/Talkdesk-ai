@@ -3,7 +3,7 @@ function Footer(){
     return(
         <>
         <div className="intro">
-            <h1 className="logo">Talkdesk<span class="highlight">AI</span></h1>
+            <h1 className="logo">Talkdesk<span className="highlight">AI</span></h1>
             <p>The AI call agent that answers every customer call instantly - 24/7,
                 on autopilot for businesses of different size.</p>
         </div>
