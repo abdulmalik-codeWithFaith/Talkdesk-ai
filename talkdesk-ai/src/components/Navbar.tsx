@@ -7,8 +7,8 @@ function Navbar(){
          <>
         <div className="navbar">
         <div className="logotxt">
-        <h1>TalkdeskAI</h1>
-          </div>2
+        <h1>Talkdesk<span className="highlight">AI</span></h1>
+          </div>
     <div className="handburger">
        <div className="nav-links">
            <a href="/">Home</a>
