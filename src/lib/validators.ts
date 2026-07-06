@@ -84,7 +84,6 @@ export const onboardingSchema = z.object({
     .string()
     .min(1, "Business description is required")
     .min(20, "Description must be at least 20 characters"),
-  logo: z.instanceof(File).optional().nullable(),
 });
 
 export type LoginFormData = z.infer<typeof loginSchema>;

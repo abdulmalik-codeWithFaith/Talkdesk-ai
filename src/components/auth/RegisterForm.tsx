@@ -101,7 +101,7 @@ export function RegisterForm() {
           id="phone"
           type="tel"
           autoComplete="tel"
-          placeholder="+1 (555) 000-0000"
+          placeholder="+234 000 000-0000"
           error={!!errors.phone}
           {...register("phone")}
         />

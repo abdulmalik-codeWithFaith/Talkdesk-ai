@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { useForm, Controller } from "react-hook-form";
+import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   Button,
@@ -11,7 +11,6 @@ import {
   Input,
   Label,
 } from "@/components/ui";
-import { LogoUpload } from "./LogoUpload";
 import { completeOnboarding, getApiErrorMessage } from "@/lib/api";
 import {
   onboardingSchema,
@@ -48,12 +47,10 @@ export function OnboardingForm() {
 
   const {
     register,
-    control,
     handleSubmit,
     formState: { errors, isSubmitting },
   } = useForm<OnboardingFormData>({
     resolver: zodResolver(onboardingSchema),
-    defaultValues: { logo: null },
   });
 
   const onSubmit = async (data: OnboardingFormData) => {
@@ -68,7 +65,6 @@ export function OnboardingForm() {
         address: data.address,
         website: data.website,
         businessDescription: data.businessDescription,
-        logo: data.logo,
       });
       router.push("/");
     } catch (error) {
@@ -147,7 +143,7 @@ export function OnboardingForm() {
           <Input
             id="phone"
             type="tel"
-            placeholder="+1 (555) 000-0000"
+            placeholder="+234 000 000-0000"
             error={!!errors.phone}
             {...register("phone")}
           />
@@ -222,19 +218,6 @@ export function OnboardingForm() {
           <ErrorMessage message={errors.businessDescription?.message} />
         </div>
 
-        <div className="sm:col-span-2">
-          <Label>Logo Upload</Label>
-          <Controller
-            name="logo"
-            control={control}
-            render={({ field }) => (
-              <LogoUpload
-                value={field.value}
-                onChange={field.onChange}
-              />
-            )}
-          />
-        </div>
       </div>
 
       <Button type="submit" fullWidth isLoading={isSubmitting} size="lg">

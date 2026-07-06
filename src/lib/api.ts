@@ -86,9 +86,9 @@ export async function completeOnboarding(
   formData.append("address", payload.address);
   if (payload.website) formData.append("website", payload.website);
   formData.append("businessDescription", payload.businessDescription);
-  if (payload.logo) formData.append("logo", payload.logo);
 
   const { data } = await api.post<OnboardingResponse>(
+
     "/onboarding/complete",
     formData,
     { headers: { "Content-Type": "multipart/form-data" } }

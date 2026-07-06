@@ -7,7 +7,6 @@ export interface OnboardingPayload {
   address: string;
   website?: string;
   businessDescription: string;
-  logo?: File | null;
 }
 
 export interface OnboardingResponse {
