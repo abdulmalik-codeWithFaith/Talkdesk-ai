@@ -1,6 +1,6 @@
 .card {
     width: 100%;
-    max-width: 420px;
+    max-width: 100%;
     min-height: 240px;
 
     background: #0F172A;
@@ -61,3 +61,16 @@
     font-size: 1rem;
     line-height: 1.8;
             }
+/* Tablet */
+@media (min-width: 768px) {
+  .card {
+    width: 48%;
+    }
+        }
+
+/* Desktop */
+@media (min-width: 1024px) {
+.card {
+    width: 31%;
+        }
+                }

@@ -4,6 +4,7 @@
 h3{
     text-align: center; 
     color:#06B6D4;
+    margin-top:150px;
 }
 h1{
     text-align: center;
@@ -13,3 +14,20 @@ p{
     text-align: center;
     color: #94a3b8;
 }
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile */
+    gap: 20px;
+        }
+
+@media (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+            }
+               }
+
+@media (min-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+            }
+                }

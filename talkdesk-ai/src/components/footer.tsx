@@ -9,30 +9,24 @@ function Footer(){
         </div>
         <div className="list">
             <h3>Product</h3>
-            <ul>
-                <li>Features</li>
-                <li>How it works</li>
-                <li>Pricing</li>
-                <li>Changelog</li>
-            </ul>
+                <p>Features</p>
+                <p>How it works</p>
+                <p>Pricing</p>
+                <p>Changelog</p>
         </div>
         <div className="list">
             <h3>Company</h3>
-            <ul>
-                <li>About</li>
-                <li>Blog</li>
-                <li>Careers</li>
-                <li>Press</li>
-            </ul>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Careers</p>
+                <p>Press</p>
         </div>
         <div className="list">
             <h3>Support</h3>
-            <ul>
-                <li>Documentation</li>
-                <li>Help Center</li>
-                <li>Contact Us</li>
-                <li>Status</li>
-            </ul>
+                <p>Documentation</p>
+                <p>Help Center</p>
+                <p>Contact Us</p>
+                <p>Status</p>
         </div>
         </>
     )

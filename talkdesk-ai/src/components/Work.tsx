@@ -13,6 +13,7 @@ function Work(){
         <h3>Get Started</h3>
         <h1>Up and running in <span className="highlight">under 10 minutes</span></h1>
         <p>No coding.No hiring.No training.Just a few steps to a fully operational AI call agent.</p>
+        <div className="cards-container">
         <Card2
         No={1}
         icon={<FiZap />}
@@ -49,8 +50,7 @@ function Work(){
         title="Review Analytics And Conversations"
         description="Log into your dashboard to see full conversation tanscripts,captured leads, question trends,and call volume over time."
         />
-
-
+        </div>
         </>
     )
 }
