@@ -16,6 +16,7 @@ function Features(){
             Qualify, and Convert Every <span className="highlight">Lead</span></h1>
             <p>Turn more website visitors into qualified leads, book more meetings 
                 automatically, and grow your business with AI working around the clock.</p>
+                <div className="cards-container">
                 <Card
                   icon={<FiClock />}
                   title="Always on 24/7"
@@ -53,6 +54,7 @@ function Features(){
                         description="View every conversation,capture leads,call duration and question trend in a clean dashboard
                         built for growing businesses."
                         />
+                        </div>
         </>
     )
 }

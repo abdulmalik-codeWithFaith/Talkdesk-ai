@@ -3,6 +3,7 @@ h3{
     font-size:18;
     text-align: center;
     margin-left:20px;
+    margin-top:150px;
 }
 h1{
     color:#F8FAFC;
@@ -19,3 +20,20 @@ p{
     font:18;
     margin-left:20px;
 }
+.cards-container{
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile */
+    gap: 20px;
+          }
+
+@media (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+            }
+                }
+
+@media (min-width: 1024px) {
+    .cards-container {
+        grid-template-columns: repeat(3, 1fr);
+            }
+                }

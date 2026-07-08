@@ -31,7 +31,7 @@
     position: absolute;
     top: 70px;
     right:0;
-    width: 600px;
+    width: 100%;
     background: #05070F;
     border-radius: 10px;
     border-bottom:2px #94A3B8;
@@ -84,4 +84,13 @@
         display:none;
             }
                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+            }
+            @media(min-width:1024px){
+               .nav-links{
+               display:flex;
+               }
+            .nav-links a{
+                font: size 30px;
+                padding:20px;
+            }
             }

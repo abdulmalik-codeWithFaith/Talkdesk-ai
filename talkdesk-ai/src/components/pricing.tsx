@@ -7,6 +7,7 @@ function Pricing(){
        <h1> Choose the Plan That Fits Your Team</h1>
        <p>Everything you need to automate conversations,
          support customers faster, and scale your business. Upgrade or cancel anytime.</p>
+         <div className="cards-container">
          <Card3 
          Header="Starter"
          description="Perfect for small businesses getting started with AI support."
@@ -56,6 +57,7 @@ function Pricing(){
          ]}
          buttonText="Contact Sales"
          />
+         </div>
         </>
     )
 }
